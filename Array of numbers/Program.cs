@@ -48,11 +48,3 @@ int average = sum / array.Count();
 Console.WriteLine(average);
 
 Console.ReadLine();
-
-
-
-
-
-
-
-
