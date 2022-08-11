@@ -48,3 +48,24 @@ int average = sum / array.Count();
 Console.WriteLine(average);
 
 Console.ReadLine();
+
+// задание со звездочкой
+
+Console.WriteLine("\n" + "Нажмите любую клавишу, чтобы вывести элементы массива по убыванию");
+Console.ReadLine();
+int a = 0;
+for (int i = 0; i < array.Count(); i++)
+{
+    for (int b = i + 1; b < array.Count(); b++)
+    {
+        if (array[b] > array[i])
+        {
+            a = array[b];
+            array[b] = array[i];
+            array[i] = a;
+        }
+    }
+Console.Write(array[i]+ " ");
+}
+
+Console.ReadLine();
